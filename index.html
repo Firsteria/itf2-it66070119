@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=devic, initial-scale=1.0">
+    <title>
+        Document
+    </title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function setUsername() {
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s hub";
+        }
+        function setProfile() {
+            document.getElementById("profile-image").style.backgroundImage = "url(" + document.getElementById("profile-img").value + ")";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="pro_img" id="profile-image">
+            </div>
+            <div class="noti">69</div>
+        </div>
+        <div class="username">
+            <a class="on-hover" href="https://www.google.com">
+                <p style="font-size: x-large; font-weight: 500;" id="username-p">LoobLud Piyaphat's hub</p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label style="font-weight: 500; font-size: large;">Username :</label><input style="margin-left: 10px;"
+                    type="text" id="username"><button style="margin-left: 10px;" id="setUser"
+                    onclick="setUsername()">Apply</button></div>
+            <div><label style="font-weight: 500; font-size: large;">Profile Image :</label><input
+                    style="margin-left: 10px;" type="text" id="profile-img"><button onclick="setProfile()"
+                    style="margin-left: 10px;" id="setImg">Apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gal-items col-span">
+                <img class="img1" src="https://i.pinimg.com/236x/0e/b2/53/0eb2533633db22d535428cbf96f5aee6.jpg">
+            </div>
+            <div class="gal-items"><img class="img1"
+                    src="https://i.pinimg.com/236x/52/00/b0/5200b0ada832ea5d5e6cd5b8c2242ce7.jpg"></div>
+            <div class="gal-items"><img class="img1"
+                    src="https://i.pinimg.com/236x/1f/a2/04/1fa204b35d34b5f069c3d5c5f0e73121.jpg"></div>
+            <div class="gal-items"><img class="img1"
+                    src="https://i.pinimg.com/236x/ee/21/be/ee21be04ac76392fda51f8b8b6e97e08.jpg"></div>
+            <div class="gal-items row-span"><img class="img1"
+                    src="https://i.pinimg.com/236x/24/c2/5f/24c25f1795ea1dc2a3eaa2946c958d0b.jpg"></div>
+            <div class="gal-items"><img class="img1"
+                    src="https://i.pinimg.com/236x/a8/aa/23/a8aa234c79f3355f146cdfea256b603d.jpg"></div>
+            <div class="gal-items"><img class="img1"
+                    src="https://i.pinimg.com/736x/d6/cf/6f/d6cf6fc1b7016353b53de0857f80f624.jpg"></div>
+            <div class="gal-items"><img class="img1"
+                    src="https://i.pinimg.com/236x/8c/24/7f/8c247fbf0059d5877645138543a0cc71.jpg"></div>
+            <div class="gal-items"><img class="img1"
+                    src="https://i.pinimg.com/564x/d1/c3/ac/d1c3acc5d3a9b9758d8c852819a8b149.jpg"></div>
+            <div class="gal-items"><img class="img1"
+                    src="https://i.pinimg.com/236x/93/c9/a3/93c9a39c07532844bc48dc3aa115543c.jpg"></div>
+        </div>
+    </div>
+</body>
+
+</html>
